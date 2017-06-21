@@ -40,14 +40,14 @@
     <meta name="msapplication-TileImage" content="">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link rel="stylesheet" href="css/master.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/master.css" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
 
     <!-- JS -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://use.fontawesome.com/75be605ddf.js"></script>
-    <script src="js/master.js"></script>
+    <script src="../js/master.js"></script>
 
 </head>
 
@@ -57,7 +57,7 @@
         <div class="side-bar">
             <div class="vertical-center">
                 <div class="logo">
-                    <img src="img/temp-logo.svg" alt="">
+                    <img src="../img/temp-logo.svg" alt="">
                 </div>
                 <div class="nav">
                     <a href="">Home</a>
@@ -69,9 +69,20 @@
 
         <div class="main">
 
-            <div class="index center-box vertical-center">
-                <h1>Welcome!</h1>
-                <h2>Please <a href="">sign in</a> or <a href="">sign up</a> to continue.</h2>
+            <div class="search center-box vertical-center">
+                <h1>Search</h1>
+                <h2>Search or Start Tracking</h2>
+                <p>If the user you search is in our tracking database, you'll be taken to the results. If not, we'll grab the latest data and start tracking every day.</p>
+
+                <form action="">
+                    <input type="text" placeholder="@username">
+                    <select name="platform">
+                        <option value="instagram">Instagram</option>
+                        <option value="twitter" disabled>Twitter</option>
+                        <option value="soundcloud" disabled>SoundCloud</option>
+                    </select>
+                    <input type="submit">
+                </form>
             </div>
 
         </div>
